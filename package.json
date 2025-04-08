@@ -10,17 +10,19 @@
     "test": "abaplint && abap_transpile && echo RUNNING && node output/index.mjs"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
-    "pg": "^8.14.1",
-    "@types/node": "^22.14.0",
     "@abaplint/cli": "^2.113.108",
     "@abaplint/database-sqlite": "^2.10.24",
     "@abaplint/runtime": "^2.10.37",
-    "express": "^4.21.2",
     "@abaplint/transpiler-cli": "^2.10.37",
+    "@types/node": "^22.14.0",
     "@types/pg": "^8.11.11",
     "@types/pg-cursor": "^2.7.2",
+    "express": "^5.1.0",
+    "pg": "^8.14.1",
+    "@types/express": "^5.0.1",
+    "tsx": "^4.19.3",
     "typescript": "^5.8.3"
   }
 }
