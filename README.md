@@ -13,4 +13,6 @@ npm test
 
 ## Diagrams
 
-![overview](/overview.drawio.svg)
+![overview](/diagrams/overview.drawio.svg)
+
+![alternatives](/diagrams/alternatives.drawio.svg)
