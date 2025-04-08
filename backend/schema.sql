@@ -1,5 +1,5 @@
 CREATE TABLE values (
   id SERIAL PRIMARY KEY,
   key VARCHAR(50),
-  name VARCHAR(100) UNIQUE
+  name VARCHAR(100)
 );
