@@ -7,16 +7,19 @@
   "paths": {
     "/post": {
       "post": {
-        "responses": {
-          "200": {
-            "description": "foo",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Data"
-                }
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Data"
               }
             }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {}
           }
         }
       }
