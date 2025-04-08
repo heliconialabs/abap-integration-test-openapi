@@ -16,4 +16,5 @@ jobs:
     - run: |
         npm run docker:start
         npm ci
+        npm run express &
         npm test
