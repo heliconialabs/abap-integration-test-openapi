@@ -8,7 +8,7 @@ ENDCLASS.
 CLASS ltcl_test IMPLEMENTATION.
 
   METHOD test.
-    zcl_application=>run( 'https://localhoost:8080' ).
+    zcl_application=>run( 'https://localhost:8080' ).
   ENDMETHOD.
 
 ENDCLASS.
