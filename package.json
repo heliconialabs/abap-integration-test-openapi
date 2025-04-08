@@ -7,6 +7,7 @@
     "database:schema": "sleep 5 && cat backend/schema.sql | docker exec -i abap-integration-test-openapi-postgresql-1 psql -h localhost -U postgres",
     "docker:start": "docker compose -p abap-integration-test-openapi -f backend/stack.yml up -d && npm run database:schema",
     "docker:stop": "docker compose -p abap-integration-test-openapi -f backend/stack.yml down -v",
+    "express": "tsx backend/express.ts",
     "test": "abaplint && abap_transpile && echo RUNNING && node output/index.mjs"
   },
   "author": "",
@@ -16,12 +17,13 @@
     "@abaplint/database-sqlite": "^2.10.24",
     "@abaplint/runtime": "^2.10.37",
     "@abaplint/transpiler-cli": "^2.10.37",
+    "@types/express": "^5.0.1",
     "@types/node": "^22.14.0",
     "@types/pg": "^8.11.11",
     "@types/pg-cursor": "^2.7.2",
+    "body-parser": "^2.2.0",
     "express": "^5.1.0",
     "pg": "^8.14.1",
-    "@types/express": "^5.0.1",
     "tsx": "^4.19.3",
     "typescript": "^5.8.3"
   }
