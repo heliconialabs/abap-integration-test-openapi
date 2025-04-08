@@ -19,12 +19,19 @@ CLASS ltcl_test IMPLEMENTATION.
     DATA lo_stmt   TYPE REF TO cl_sql_statement.
     DATA lv_sql    TYPE string.
     DATA lo_result TYPE REF TO cl_sql_result_set.
-
+    DATA lv_rows   TYPE i.
 
     lo_stmt = cl_sql_connection=>get_abap_connection( 'PG' )->create_statement( ).
 
     lv_sql = |select * from values|.
     lo_result = lo_stmt->execute_query( lv_sql ).
+
+    lv_rows = lo_result->next( ).
+
+    cl_abap_unit_assert=>assert_number_between(
+      lower  = 1
+      upper  = 1000
+      number = lv_rows ).
 
   ENDMETHOD.
 
