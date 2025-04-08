@@ -1,8 +1,6 @@
 {
   "global": {
     "files": "/src/**/*.*",
-    "exclude": [],
-    "noIssues": [],
     "skipGeneratedBOPFInterfaces": false,
     "skipGeneratedFunctionGroups": false,
     "skipGeneratedGatewayClasses": false,
@@ -21,9 +19,7 @@
   ],
   "syntax": {
     "version": "v702",
-    "errorNamespace": ".",
-    "globalConstants": [],
-    "globalMacros": []
+    "errorNamespace": "."
   },
   "rules": {
     "7bit_ascii": true,
@@ -31,17 +27,9 @@
     "add_test_attributes": true,
     "align_parameters": true,
     "align_pseudo_comments": true,
-    "align_type_expressions": {
-      "exclude": [],
-      "severity": "Error",
-      "ignoreExceptions": true
-    },
+    "align_type_expressions": true,
     "allowed_object_naming": true,
-    "allowed_object_types": {
-      "exclude": [],
-      "severity": "Error",
-      "allowed": []
-    },
+    "allowed_object_types": true,
     "ambiguous_statement": true,
     "avoid_use": {
       "exclude": [],
@@ -194,20 +182,7 @@
       "allowChained": false
     },
     "empty_statement": true,
-    "empty_structure": {
-      "exclude": [],
-      "severity": "Error",
-      "loop": true,
-      "loopAllowIfSubrc": true,
-      "if": true,
-      "while": true,
-      "case": true,
-      "select": true,
-      "do": true,
-      "at": true,
-      "try": true,
-      "when": true
-    },
+    "empty_structure": false,
     "exit_or_check": {
       "exclude": [],
       "severity": "Error",
@@ -479,18 +454,7 @@
       "checkForms": true
     },
     "method_overwrites_builtin": true,
-    "method_parameter_names": {
-      "exclude": [],
-      "severity": "Error",
-      "patternKind": "required",
-      "ignoreNames": [],
-      "ignorePatterns": [],
-      "ignoreExceptions": true,
-      "importing": "^I._.+$",
-      "returning": "^R._.+$",
-      "changing": "^C._.+$",
-      "exporting": "^E._.+$"
-    },
+    "method_parameter_names": false,
     "mix_returning": true,
     "modify_only_own_db_tables": {
       "exclude": [],
@@ -519,17 +483,7 @@
     "no_chained_assignment": true,
     "no_external_form_calls": true,
     "no_inline_in_optional_branches": true,
-    "no_prefixes": {
-      "exclude": [],
-      "severity": "Error",
-      "data": "^[LGM].?_",
-      "statics": "^S.?_",
-      "fieldSymbols": "^<[LGM].?_",
-      "constants": "^[LGM]?C.?_",
-      "types": "^TY_",
-      "methodParameters": "^[ICER].?_",
-      "allowIsPrefixBoolean": true
-    },
+    "no_prefixes": false,
     "no_public_attributes": {
       "exclude": [],
       "severity": "Error",
@@ -752,11 +706,7 @@
     "tables_declared_locally": true,
     "try_without_catch": true,
     "type_form_parameters": true,
-    "types_naming": {
-      "exclude": [],
-      "severity": "Error",
-      "pattern": "^TY_.+$"
-    },
+    "types_naming": false,
     "uncaught_exception": {
       "exclude": [],
       "severity": "Error",

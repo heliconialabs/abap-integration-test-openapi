@@ -11,7 +11,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Data"
+                "$ref": "#/components/schemas/Input"
               }
             }
           }
@@ -27,7 +27,8 @@
   },
   "components": {
     "schemas": {
-      "Data": {
+      "Input": {
+        "type": "object",
         "properties": {
           "key": {
             "type": "string"
