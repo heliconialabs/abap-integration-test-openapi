@@ -1,0 +1,14 @@
+{
+  "name": "abap-integration-test-openapi",
+  "version": "1.0.0",
+  "description": "Integration testing ABAP OpenAPI REST call on GitHub Actions",
+  "main": "index.js",
+  "scripts": {
+    "database:schema": "sleep 5 && cat backend/schema.sql | docker exec -i abap-integration-test-openapi-postgresql-1 psql -h localhost -U postgres",
+    "docker:start": "docker compose -p abap-integration-test-openapi -f backend/stack.yml up -d && npm run database:schema",
+    "docker:stop": "docker compose -p abap-integration-test-openapi -f backend/stack.yml down -v",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
