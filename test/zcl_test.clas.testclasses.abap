@@ -1,0 +1,14 @@
+CLASS ltcl_test DEFINITION FOR TESTING DURATION SHORT RISK LEVEL HARMLESS.
+
+  PRIVATE SECTION.
+    METHODS test FOR TESTING RAISING cx_static_check.
+ENDCLASS.
+
+
+CLASS ltcl_test IMPLEMENTATION.
+
+  METHOD test.
+    zcl_application=>run( 'https://localhoost:8080' ).
+  ENDMETHOD.
+
+ENDCLASS.

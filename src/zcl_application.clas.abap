@@ -24,8 +24,8 @@ CLASS zcl_application IMPLEMENTATION.
       EXPORTING
         ii_client = li_http.
 
-    ls_body-key = 'key'.
-    ls_body-name = 'name'.
+    ls_body-key = 'hello'.
+    ls_body-name = 'world'.
     li_rest->_post( ls_body ).
 
   ENDMETHOD.

@@ -1,6 +1,6 @@
 {
   "global": {
-    "files": "/src/**/*.*",
+    "files": "/{src,test}/**/*.*",
     "skipGeneratedBOPFInterfaces": false,
     "skipGeneratedFunctionGroups": false,
     "skipGeneratedGatewayClasses": false,
