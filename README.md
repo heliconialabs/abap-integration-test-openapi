@@ -1,7 +1,6 @@
 # Integration testing ABAP OpenAPI REST call on GitHub Actions
 
-Prerequsites: [Docker](https://www.docker.com) & [Node.js](https://nodejs.org/en)
-
+Prerequisites: [Docker](https://www.docker.com) & [Node.js](https://nodejs.org/en)
 Running/compiling:
 
 ```bash
